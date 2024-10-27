@@ -78,6 +78,48 @@ section {
     padding: 1rem 3rem;
     color: var(--clr-white);
     position: sticky;
-    top: 60px;
+    top: 4rem; /* Use for sticky */
+    /* scroll-margin-top: 4rem; Working top margin */
     background: var(--clr-bg);
+    border-top: 1px solid rgba(60, 60, 60, .5);
+
+}
+
+.flag {
+    width: 275px;
+    aspect-ratio: 16/9;
+    background: #BA0C2F;
+    position: relative;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.cross-hor {
+    width: 100%; 
+    height:24px;
+    background: #00205B;
+    position: absolute;
+    top: calc(50% - 12px);
+    outline: 15px solid white
+}
+
+.cross-ver-1 {
+    width: 24px; 
+    top:0;
+    height:calc(50% - 12px);
+    background: #00205B;
+    position: absolute;
+    left: 25%;
+    border-left: 15px solid #ffffff;
+    border-right: 15px solid #ffffff;
+}
+.cross-ver-2 {
+    width: 25px; 
+    bottom:0;
+    height:calc(50% - 12px);
+    background: #00205B;
+    position: absolute;
+    left: 25%;
+    border-left: 15px solid #ffffff;
+    border-right: 15px solid #ffffff;
 }
