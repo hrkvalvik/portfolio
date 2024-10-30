@@ -78,8 +78,8 @@ section {
     padding: 1rem 3rem;
     color: var(--clr-white);
     position: sticky;
-    top: 4rem; /* Use for sticky */
-    /* scroll-margin-top: 4rem; Working top margin */
+    /* top: 4rem;  Use for sticky */
+    scroll-margin-top: 4rem; 
     background: var(--clr-bg);
     border-top: 1px solid rgba(60, 60, 60, .5);
 
