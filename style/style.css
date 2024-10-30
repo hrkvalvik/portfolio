@@ -36,7 +36,7 @@ header {
     & ul {
         display: flex;
         gap: 1rem;
-        font-size: 1rem;
+        font-size: .725rem;
     }
 
     & li {
@@ -122,4 +122,43 @@ section {
     left: 25%;
     border-left: 15px solid #ffffff;
     border-right: 15px solid #ffffff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+}
+
+.card {
+    background: #1b1b1b;
+    border-radius: .5rem;
+    padding: 1rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 200ms ease-in;
+
+    &:hover {
+        filter: brightness(106%);
+    }
+
+
+}
+
+.fullwidth {
+    grid-column: span 2;
+    border-radius: .5rem;
+    padding: 1rem;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    background: #212121;
+
+    & p {
+        font-size: .825rem;
+        opacity: .8;
+    }
 }
