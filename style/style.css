@@ -78,8 +78,8 @@ section {
     padding: 1rem 3rem;
     color: var(--clr-white);
     position: sticky;
-    /* top: 4rem;  Use for sticky */
-    scroll-margin-top: 4rem; 
+    /*  top: 4rem; /* Use for sticky */
+    scroll-margin-top: 4rem; /* Working top margin */
     background: var(--clr-bg);
     border-top: 1px solid rgba(60, 60, 60, .5);
 
@@ -160,5 +160,22 @@ section {
     & p {
         font-size: .825rem;
         opacity: .8;
+    }
+}
+
+@media (max-width:480px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 100px 100px;
+        gap: 1rem;
+    }
+
+    .card {
+        aspect-ratio: unset;
+    }
+
+    .fullwidth {
+        grid-column: 1;
     }
 }
