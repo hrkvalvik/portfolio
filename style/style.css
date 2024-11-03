@@ -16,10 +16,10 @@
 
 .pink-theme {
     --clr-bg: #FDF2F8;
-    --clr-base-font: #831843;
+    --clr-base-font: #FDF2F8;
     --clr-black: #1b1b1b;
     --clr-white: #ffffff;
-    --clr-nav: #d1fae5;
+    --clr-nav: #BE185D;
 }
 
 html {
