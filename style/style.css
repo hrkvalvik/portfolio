@@ -1,12 +1,30 @@
 :root {
-    --clr-bg: #262626;
+    --clr-bg: #fafafa;
+    --clr-base-font: #1b1b1b;
     --clr-black: #1b1b1b;
     --clr-white: #fafafa;
+    --clr-nav: #ebebeb;
+}
+
+.dark-theme {
+    --clr-bg: #1b1b1b;
+    --clr-base-font: #fafafa;
+    --clr-black: #1b1b1b;
+    --clr-white: #"ffffff";
+    --clr-nav: #010101;
+}
+
+.pink-theme {
+    --clr-bg: #FDF2F8;
+    --clr-base-font: #831843;
+    --clr-black: #1b1b1b;
+    --clr-white: #ffffff;
+    --clr-nav: #d1fae5;
 }
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     margin: 0;
@@ -14,6 +32,7 @@ body {
     background: var(--clr-bg);
     font-size: 1rem;
     font-family: monospace;
+    color: var(--clr-base-font)
 }
 
 ul {
@@ -25,8 +44,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.5rem;
-    background: var(--clr-black);
-    color: var(--clr-white);
+    background: var(--clr-nav);
     font-size: 1.5rem;
     font-weight: 300;
     position: sticky;
@@ -44,12 +62,26 @@ header {
         
         & a {
             text-decoration: none;
-            color: var(--clr-white);
+            color: var(--clr-base-font);
             transition: color 300ms ease-in;
             position: relative;
             }   
         }
 }
+
+header select {
+    border-radius: 4px;
+    padding-inline: .5rem;
+    border: none;
+    background: rgb(147, 171, 171);
+    color:var(--clr-base-font);
+    outline: none; 
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    mix-blend-mode: difference;
+}
+
 
 header li a:after {
     content:"";
@@ -59,7 +91,7 @@ header li a:after {
     bottom: .2rem;
     opacity: 0;
     left: 0;
-    background: var(--clr-white);
+    background: var(--clr-black);
     transition: opacity 300ms ease-in, bottom 200ms ease-in, height 200ms ease-in;
 }   
 
@@ -71,12 +103,12 @@ header li a:hover:after {
     bottom: -.4rem;
     opacity: 1;
     left: 0;
-    background: var(--clr-white);
+    background: var(--clr-black);
 }   
 
 section {
     padding: 1rem 3rem;
-    color: var(--clr-white);
+    color: var(--clr-base-font);
     position: sticky;
     /*  top: 4rem; /* Use for sticky */
     scroll-margin-top: 4rem; /* Working top margin */
@@ -132,7 +164,7 @@ section {
 }
 
 .card {
-    background: #1b1b1b;
+    background: var(--clr-nav);
     border-radius: .5rem;
     padding: 1rem;
     aspect-ratio: 1/1;
@@ -155,7 +187,7 @@ section {
     display: flex;
     align-items: start;
     flex-direction: column;
-    background: #212121;
+    background: var(--clr-nav);
 
     & p {
         font-size: .825rem;
