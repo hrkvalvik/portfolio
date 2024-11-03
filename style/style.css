@@ -96,7 +96,7 @@ header li a:after {
     bottom: .2rem;
     opacity: 0;
     left: 0;
-    background: var(--clr-black);
+    background: var(--clr-nav-font);
     transition: opacity 300ms ease-in, bottom 200ms ease-in, height 200ms ease-in;
 }   
 
@@ -108,7 +108,7 @@ header li a:hover:after {
     bottom: -.4rem;
     opacity: 1;
     left: 0;
-    background: var(--clr-black);
+    background: var(--clr-nav-font);
 }   
 
 section {
