@@ -78,13 +78,13 @@ header select {
     padding-inline: .5rem;
     border: none;
     background: none;
-    color: rgb(0, 0, 0);
+    color: grey;
     outline: none; 
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     border: 1px solid grey;
-    mix-blend-mode:difference;
+    mix-blend-mode:luminosity;
 }
 
 
