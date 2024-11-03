@@ -4,22 +4,25 @@
     --clr-black: #1b1b1b;
     --clr-white: #fafafa;
     --clr-nav: #ebebeb;
+    --clr-nav-font: #1b1b1b;
 }
 
 .dark-theme {
     --clr-bg: #1b1b1b;
     --clr-base-font: #fafafa;
     --clr-black: #1b1b1b;
-    --clr-white: #"ffffff";
+    --clr-white: #ffffff;
     --clr-nav: #010101;
+    --clr-nav-font: #fafafa;
 }
 
 .pink-theme {
     --clr-bg: #FDF2F8;
-    --clr-base-font: #FDF2F8;
+    --clr-base-font: #831843;
     --clr-black: #1b1b1b;
     --clr-white: #ffffff;
     --clr-nav: #BE185D;
+    --clr-nav-font: #FDF2F8;
 }
 
 html {
@@ -50,6 +53,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 10;
+    color: var(--clr-nav-font);
 
     & ul {
         display: flex;
@@ -62,7 +66,7 @@ header {
         
         & a {
             text-decoration: none;
-            color: var(--clr-base-font);
+            color: var(--clr-nav-font);
             transition: color 300ms ease-in;
             position: relative;
             }   
@@ -73,13 +77,14 @@ header select {
     border-radius: 4px;
     padding-inline: .5rem;
     border: none;
-    background: rgb(147, 171, 171);
-    color:var(--clr-base-font);
+    background: none;
+    color: rgb(0, 0, 0);
     outline: none; 
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    mix-blend-mode: difference;
+    border: 1px solid grey;
+    mix-blend-mode:difference;
 }
 
 
@@ -113,7 +118,7 @@ section {
     /*  top: 4rem; /* Use for sticky */
     scroll-margin-top: 4rem; /* Working top margin */
     background: var(--clr-bg);
-    border-top: 1px solid rgba(60, 60, 60, .5);
+    border-top: 1px solid rgba(60, 60, 60, .2);
 
 }
 
@@ -167,6 +172,7 @@ section {
     background: var(--clr-nav);
     border-radius: .5rem;
     padding: 1rem;
+    color: var(--clr-nav-font);
     aspect-ratio: 1/1;
     display: flex;
     justify-content: center;
@@ -187,6 +193,7 @@ section {
     display: flex;
     align-items: start;
     flex-direction: column;
+    color: var(--clr-nav-font);
     background: var(--clr-nav);
 
     & p {
