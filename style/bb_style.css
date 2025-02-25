@@ -1,0 +1,139 @@
+
+@font-face {
+  font-family: 'coolvetica_lt';
+  src: url('https://www.babybanden.no/users/babybandensand_mystore_no/fonts/coolvetica_lt-webfont.woff2') format('woff2'),
+        url('https://www.babybanden.no/users/babybandensand_mystore_no/fonts/coolvetica_lt-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'coolvetica_lt';
+}
+
+.__header_builder_section {
+  background-color: transparent !important;
+}
+
+.__icon_wrapper[data-subblock-key="custom_icon"] {
+  display: flex;
+  flex-direction: row;
+  gap: .3rem;
+  justify-content: start;
+  align-items: center;
+  border-radius: 4px;
+  /* background: rgba(255,255,255, .1); */
+}
+
+
+.__icon_wrapper > * {
+  color: white !important;
+}
+.page-wrapper {
+  background-image: linear-gradient(180deg, #0B828E 0%, #48c7c9 10%, #ffffff 20%);
+}
+
+input.__search_input_field::-webkit-input-placeholder {
+  color: white;
+}
+
+.__search_input_field {
+    background-image: linear-gradient(90deg, rgba(255,255,255, .1), rgba(255,255,255, .04));
+}
+
+.__open_search_section svg {
+  fill: white;
+  opacity: .7;
+}
+
+.open_search_section svg :where(input#open_search:focus)  {
+  opacity:1 ;
+}
+
+._megamenu-buton svg {
+  display: none;
+}
+
+._megamenu-buton {
+  display: flex;
+  align-items: center;
+
+}
+
+._megamenu-buton::after {
+  content: url('https://www.babybanden.no/users/babybandensand_mystore_no/icons/chevron-right.png');
+  transform: rotate(0deg);
+  width:22px;
+  height: 22px;
+  transform: scale(.8);
+  filter: invert(100%) brightness(200%);
+}
+
+
+.__header_section > *,
+.__header_icons_block svg{
+  color: #ffffff !important;
+  fill: #ffffff;
+}
+
+.__header_section .__header_logo_block {
+  filter: invert(100%)
+    brightness(120%);
+}
+
+.__productslist_section {
+  background-color: transparent !important;
+}
+
+.__productslist > .container {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.__slider_section {
+  background-color: transparent !important;
+}
+
+.__slider_section .splide__track {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  outline: 8px solid rgba(130,230,230, .7);
+  
+ box-shadow: 0px 38px 30px -27px rgb(5 122 132 / 59%);
+  
+}
+
+/*
+.__slider_section .splide__track::before {
+  content: "";
+  width: 340px;
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 999px;
+  top: -3.5rem;
+  left: -5.0rem;
+  background-image: linear-gradient(90deg, #00a896, #48c7c9);
+  z-index:40;
+  opacity: .8;
+}
+
+.__slider_section .splide__track::after {
+  content: "";
+  width: 270px;
+  aspect-ratio: 1;
+  position: absolute;
+  border-radius: 999px;
+  right: -3.5rem;
+  bottom: -5.0rem;
+  background-image: linear-gradient(90deg, #b0320e, #8D280B);
+  z-index:40;
+  opacity: .8;
+} */
+
+#block--header_menu_button3ac72405-80a9-4d3e-ba69-7390003884f4__header_menu_button {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
